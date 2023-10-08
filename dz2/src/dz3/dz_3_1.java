@@ -11,6 +11,7 @@ int n1 = random.nextInt(490)+10;
             System.out.println("Число " + n1 + " содержиться в интервале (25;200)");
         }else{
             System.out.println("Число " + n1 + " не содержиться в интервале (25;200)");
+
         }
     }
 }
