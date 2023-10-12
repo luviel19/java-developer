@@ -2,7 +2,7 @@ package dz4;
 
 import java.util.Scanner;
 
-public class dz_4_2 {
+public class Dz0402 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n1 = 0;

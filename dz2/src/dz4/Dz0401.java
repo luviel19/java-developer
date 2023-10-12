@@ -2,7 +2,7 @@ package dz4;
 
 import java.util.Scanner;
 
-public class dz_4_1 {
+public class Dz0401 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите кол-во циклов");

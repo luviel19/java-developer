@@ -3,7 +3,7 @@ import java.util.Random;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class dz5_1 {
+public class Dz0501 {
     public static void main(String[] args) {
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);

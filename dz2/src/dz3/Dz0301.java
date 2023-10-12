@@ -1,8 +1,7 @@
 package dz3;
 import java.util.Random;
-import java.util.Scanner;
 
-public class dz_3_1 {
+public class Dz0301 {
     public static void main(String[] args) {
 Random random = new Random();
 int n1 = random.nextInt(490)+10;

@@ -1,7 +1,7 @@
 package dz5;
 import java.util.Scanner;
 import java.util.Arrays;
-public class dz5_2 {
+public class Dz0502 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int[] n1 = new int [5];

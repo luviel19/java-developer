@@ -2,7 +2,7 @@ package dz3;
 
 import java.util.Scanner;
 
-public class dz_3_5 {
+public class Dz0305 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите номер купона");

@@ -1,6 +1,6 @@
 package dz3;
 import java.util.Scanner;
-public class dz_3_4 {
+public class Dz0304 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("введите месяц");
@@ -15,7 +15,7 @@ public class dz_3_4 {
             case 1,3,5,7,10,12-> System.out.println("31");
             case 2 ->System.out.println("28") ;
             case 4,6,9,11->System.out.println("30");
-            };
+            }
 
         } else if (isLeap == 2) {
              switch (monthNumber){

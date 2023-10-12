@@ -3,7 +3,7 @@ package dz4;
 import java.util.Random;
 import java.util.Scanner;
 
-public class dz_4_4 {
+public class Dz0404 {
     public static void main(String[] args) {
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);
