@@ -13,16 +13,20 @@ public class Cat {
     public Cat(String name, int weight) {
         setName(name);
         setWeight(weight);
+
     }
 
     public void setName(String name) {
-        if name(name.replace(" ", "").length() > 2 && name != null) {
+        if name(name.replace(" ", "").length() > 2 && name != null)
+        {
             this.name = name;
         }
     }
 
+
     public void setWeight(double weight) {
-        if weight(weight > 0 && weight < 9) {
+        if weight(weight > 0 && weight < 9)
+        {
             this weight = weight;
         }
     }
