@@ -6,7 +6,7 @@ public class scooter extends Bicycle {
     protected boolean electric;
 
     public scooter(String number, int maxSpeed, int wheels, String typeOfScooter, boolean electric) {
-        super(number, maxSpeed, wheels, typeOfScooter)
+        super(number, maxSpeed, wheels, typeOfScooter);
         this.electric = electric;
     }
 

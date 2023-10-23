@@ -9,7 +9,6 @@ public class RepairShop {
         if (vehicle == null) {
             vehicle = new Vehicle[1];
             Vehicle[0] = vehicle;
-        } else {
             Vehicle[] NewVehicle = new Vehicle[vehicles.length + 1];
             for (int i = 0; i < vehicles.length; i++) {
                 NewVehicle[i] = vehicle[i];
@@ -24,7 +23,6 @@ public class RepairShop {
         for (Vehicle vehicle : vehicles) {
 
             vehicle.repair();
-            vehicle.colors(getRandomColor());
             vehicle = null;
 
         }

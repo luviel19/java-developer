@@ -17,17 +17,15 @@ public class Cat {
     }
 
     public void setName(String name) {
-        if name(name.replace(" ", "").length() > 2 && name != null)
-        {
+        if (name.replace(" ", "").length() > 2 && name != null) {
             this.name = name;
         }
     }
 
 
     public void setWeight(double weight) {
-        if weight(weight > 0 && weight < 9)
-        {
-            this weight = weight;
+        if (weight > 0 && weight < 9) {
+            this.weight = weight;
         }
     }
 
@@ -37,7 +35,7 @@ public class Cat {
 
     public boolean attack(Cat theOpponent) {
         if (theOpponent == null) {
-            throw new IllegalArgumentException("The opponent can not be null")
+            throw new IllegalArgumentException("The opponent can not be null");
         }
         if (theOpponent.weight < this.weight) {
             this.win++;
@@ -47,6 +45,7 @@ public class Cat {
             return false;
         }
     }
+}
 
 
 
