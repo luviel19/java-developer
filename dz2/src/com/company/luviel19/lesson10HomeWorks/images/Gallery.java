@@ -20,12 +20,6 @@ public class Gallery implements Drawable {
             drawable.draw();
         }
     }
-    public Gallery clone(){
-        // копия Order, массивов и элементов массивов
-        Drawable[] drawables1 = new Drawable[drawables.length];
-        for (int i = 0; i < drawables1.length; i++) {
-            drawables1[i] = drawables[i].clone();
-        }
-        return new Gallery(drawables1);
+
 
 }

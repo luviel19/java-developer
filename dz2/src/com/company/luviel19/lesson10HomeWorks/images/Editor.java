@@ -14,13 +14,15 @@ public final class Editor implements Cloneable {
     public void show() {
         drawable.draw();
     }
-
     @Override
-    protected Editor clone(){
+    public Editor clone(){
         try {
-            return super.clone();
+            Editor editor = new Editor(drawable.clone());
+            return (Editor) super.clone();
+
         } catch (CloneNotSupportedException e) {
             throw new RuntimeException(e);
         }
+
     }
 }

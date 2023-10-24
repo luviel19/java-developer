@@ -7,6 +7,7 @@ public class Wolf extends WildAnimal {
     private final String[] likeToEat;
     private final String color;
 
+
     public Wolf(String[] likeToEat, String color) {
         this.likeToEat = likeToEat;
         this.color = color;
@@ -17,7 +18,7 @@ public class Wolf extends WildAnimal {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Wolf wolf = (Wolf) o;
-        return Arrays.equals(likeToEat, wolf.likeToEat) && Objects.equals(color, wolf.color);
+        return Arrays.equals(this.likeToEat, wolf.likeToEat) && Objects.equals(this.color, wolf.color);
     }
 
     @Override
