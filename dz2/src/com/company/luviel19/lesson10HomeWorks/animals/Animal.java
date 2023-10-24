@@ -8,7 +8,7 @@ abstract public class Animal {
         return name;
     }
 
-    public static void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 

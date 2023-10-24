@@ -1,6 +1,6 @@
 package com.company.luviel19.lesson10HomeWorks.animals;
 
-public class WildAnimal extends Animal {
+public class WildAnimal extends com.company.luviel19.lesson10HomeWorks.animals.Animal {
     private int strength;
 
     public int getStrength() {
