@@ -199,6 +199,7 @@ public class Fitness {
     }
 
     @Override
+    public String toString() {
         return "Fitness{" +
                 "gum01=" + Arrays.toString(gum01) +
                 ", pool01=" + Arrays.toString(pool01) +
@@ -210,5 +211,6 @@ public class Fitness {
                 '}';
     }
 }
+
 
 
