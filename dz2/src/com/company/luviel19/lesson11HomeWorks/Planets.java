@@ -9,7 +9,7 @@ public enum Planets {
     Jupiter(139822,1898600,"Юпитер"),
     Saturn(116464,568460,"Сатурн"),
     Uranus(50724,86832,"Уран"),
-    Neptune(49244,102430,"Нептун");
+    NeptuneNeptune(49244,102430,"Нептун");
 
     @Override
     public String toString() {
@@ -21,8 +21,8 @@ public enum Planets {
     }
 
     private double diametre;
-    private double weight;
     private String  name;
+
 
         Planets(double diametre, double weight,String name) {
             this.diametre = diametre;
@@ -42,7 +42,6 @@ public enum Planets {
         return diametre;
     }
 
-    public void setDiametre(double diametre) {
         this.diametre = diametre;
     }
 
@@ -50,7 +49,6 @@ public enum Planets {
         return weight;
     }
 
-    public void setWeight(double weight) {
         this.weight = weight;
     }
 

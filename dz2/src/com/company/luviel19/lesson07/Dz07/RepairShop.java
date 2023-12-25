@@ -1,30 +1,35 @@
 package com.company.luviel19.lesson07.Dz07;
 
+import java.util.Arrays;
+
 public class RepairShop {
+    // в массив можно добавить тип Vehicle и все его подтипы
+    private Vehicle[] vehicles = new Vehicle[4]; // null
 
-    protected Vehicle[] vehicles = new Vehicle[4]; // null
-    protected String[] colors = {"красный", "жёлтый", "оранжевый", "чёрный"};
-
-    public void addToVehicle(Vehicle vehicle) {
-        if (vehicle == null) {
-            vehicle = new Vehicle[1];
-            Vehicle[0] = vehicle;
-            Vehicle[] NewVehicle = new Vehicle[vehicles.length + 1];
-            for (int i = 0; i < vehicles.length; i++) {
-                NewVehicle[i] = vehicle[i];
-            }
-            NewVehicle[NewVehicle.length - 1] = vehicle;
-        }
-    }
-
-    public void repairAll() {
+    // изменить цвет
+    // восстановить цвет (установить дефолтный)
+    // Машина, Самокат
+    // перекрашивать все транспортные средства,
+    // у которых есть соответствующий функционал
+    public void repairAll(){
 
         // [car, scooter, train, null]
         for (Vehicle vehicle : vehicles) {
-
+            // для вызова доступны только методы супертипа, т.е. Vehicle
+            // но будет использована реализация конкретного подтипа
             vehicle.repair();
-            vehicle = null;
 
+            // оператор instanceof вернет true,
+            // если экземпляр (слева) принадлежит указанному справа типу
+            /*if (vehicle instanceof Train) {
+                Train t = (Train) vehicle;
+                t.changeClimateControl();
+            }*/
+            // проверка на принадлежность типу + приведение
+            // аналогично предыдущей записи
+            if (vehicle instanceof Train train) {
+                train.changeClimateControl();
+            }
         }
     }
 }

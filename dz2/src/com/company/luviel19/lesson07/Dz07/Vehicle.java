@@ -10,17 +10,16 @@ public abstract class Vehicle {
     protected String number; // null
     protected int levelOfWare; // 0
     protected int maxSpeed = 120; // 120
-protected int damage = 10;
+
     public Vehicle(String number) {
         this.number = number;
     }
-
-    public Vehicle(String number, int maxSpeed) {
+    public Vehicle(String number, int maxSpeed){
         this(number);
         this.maxSpeed = maxSpeed;
     }
 
-    public String getNumber() {
+    public String getNumber(){
         return number;
     }
 
@@ -32,16 +31,15 @@ protected int damage = 10;
         this.maxSpeed = maxSpeed;
     }
 
-    public int getLevelOfWare() {
+    public int getLevelOfWare(){
         return levelOfWare;
     }
 
-    public void incLevelOfWare(int value) {
+    public void incLevelOfWare(int value){
         if (value < 0) return;
         levelOfWare += value;
     }
-
-    public void repair() {
+    public void repair(){
         if (levelOfWare > 0) levelOfWare--;
     }
 
