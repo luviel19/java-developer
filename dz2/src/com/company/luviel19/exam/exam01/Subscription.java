@@ -1,15 +1,21 @@
 package com.company.luviel19.exam.exam01;
 
+import java.time.LocalDate;
+
 public class Subscription {
     private String name,surname;
-    private int year;
+    LocalDate today = LocalDate.now();
+    private int max = today.plusYears(80).getYear();
+            private int min =today.minusYears(18).getYear();
     public Subscription(String name, String surname, int year){
         if(name.length()<1) throw new IllegalArgumentException("The name should not be empty!");
         if(surname.length()<1) throw new IllegalArgumentException("The last name should not be empty");
-        if (year > 2005 || year < 1943) throw new IllegalArgumentException("Age is not suitable");
+        if (min < 18 || 80 > max) throw new IllegalArgumentException("Age is not suitable");
         this.name = name;
         this.surname = surname;
-        this.year = year;
+        this.max = max;
+        this.min = min;
+
     }
 
     public String getName() {
@@ -20,8 +26,16 @@ public class Subscription {
         return surname;
     }
 
-    public int getYear() {
-        return year;
+    public LocalDate getToday() {
+        return today;
+    }
+
+    public int getMax() {
+        return max;
+    }
+
+    public int getMin() {
+        return min;
     }
 
     @Override
@@ -29,7 +43,7 @@ public class Subscription {
         return "Subscription{" +
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
-                ", year=" + year +
+                ", year="  +
                 '}';
     }
 }
